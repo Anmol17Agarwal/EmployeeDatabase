@@ -7,4 +7,8 @@ public class EmployeeConnection {
     public static final String USERNAME = "root";
     public static final String PASSWORD = "";
     private static Connection connection = null;
+
+    public boolean attemptConnection() {
+        return false;
+    }
 }
