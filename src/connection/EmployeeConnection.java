@@ -15,6 +15,7 @@ public class EmployeeConnection {
      * and return whether the connection was successful or not.
      */
     public boolean attemptConnection() {
+        boolean isConnected = false;
         try {
             connection = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
         } catch (SQLException e) {
