@@ -18,6 +18,9 @@ public class EmployeeConnection {
         boolean isConnected = false;
         try {
             connection = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
+            if (connection != null) {
+                isConnected = true;
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
