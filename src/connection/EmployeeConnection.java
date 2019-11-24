@@ -17,7 +17,11 @@ public class EmployeeConnection {
     public static boolean closeConnection() {
         // check if there is a connection present already
         if (getConnection() != null) {
-
+            try {
+                getConnection().close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
         return false;
     }
