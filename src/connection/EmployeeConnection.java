@@ -8,6 +8,10 @@ public class EmployeeConnection {
     public static final String PASSWORD = "";
     private static Connection connection = null;
 
+    /**
+     * This method will attempt to connect to the database via a URL path, username and password
+     * and return whether the connection was successful or not.
+     */
     public boolean attemptConnection() {
         return false;
     }
