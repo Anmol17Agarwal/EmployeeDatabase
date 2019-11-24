@@ -9,7 +9,8 @@ public class EmployeeDatabaseMain {
             System.out.println("Connection Failed and I Don't Know Why!");
         }
         if (EmployeeConnection.getConnection() != null) {
-            // make method to close connection
+            System.out.println(EmployeeConnection.closeConnection() ?
+                    "Connection Closed Successfully" : "Something happened");
         }
     }
 }
