@@ -1,6 +1,8 @@
 package connection;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class EmployeeConnection {
     public static final String DATABASE_URL = "jdbc:mysql://localhost:3306/test";
@@ -13,6 +15,11 @@ public class EmployeeConnection {
      * and return whether the connection was successful or not.
      */
     public boolean attemptConnection() {
+        try {
+            connection = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return false;
     }
 }
