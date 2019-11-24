@@ -20,9 +20,7 @@ public class EmployeeConnection {
         if (getConnection() != null) {
             try {
                 getConnection().close();
-                if (getConnection() == null) {
-                    isConnectionClosed = true;
-                }
+                isConnectionClosed = true;
             } catch (SQLException e) {
                 System.out.println("Could not close connection");
             }
