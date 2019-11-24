@@ -8,7 +8,7 @@ public class EmployeeConnection {
     public static final String DATABASE_URL = "jdbc:mysql://localhost:3306/test";
     public static final String USERNAME = "root";
     public static final String PASSWORD = "";
-    public static Connection connection = null;
+    private static Connection connection = null;
 
     /**
      * This method will attempt to connect to the database via a URL path, username and password
