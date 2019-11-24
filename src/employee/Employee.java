@@ -11,6 +11,11 @@ public class Employee {
         this.empSalary = empSalary;
     }
 
+    @Override
+    public String toString() {
+        return String.format("%-4d:%-20s:%-10f", this.getEmpID(), this.getEmpName(), this.getEmpSalary());
+    }
+
     public int getEmpID() {
         return empID;
     }
