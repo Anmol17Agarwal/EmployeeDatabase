@@ -10,6 +10,10 @@ public class EmployeeConnection {
     public static final String PASSWORD = "";
     private static Connection connection = null;
 
+    public static Connection getConnection() {
+        return connection;
+    }
+
     /**
      * This method will attempt to connect to the database via a URL path, username and password
      * and return whether the connection was successful or not.
