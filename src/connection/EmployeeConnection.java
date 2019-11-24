@@ -14,6 +14,10 @@ public class EmployeeConnection {
         return connection;
     }
 
+    public static boolean closeConnection() {
+        return false;
+    }
+
     /**
      * This method will attempt to connect to the database via a URL path, username and password
      * and return whether the connection was successful or not.

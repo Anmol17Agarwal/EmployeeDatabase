@@ -8,6 +8,8 @@ public class EmployeeDatabaseMain {
         } else {
             System.out.println("Connection Failed and I Don't Know Why!");
         }
-
+        if (EmployeeConnection.getConnection() != null) {
+            // make method to close connection
+        }
     }
 }
