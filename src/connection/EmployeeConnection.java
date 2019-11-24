@@ -22,7 +22,7 @@ public class EmployeeConnection {
                 isConnected = true;
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("SQL Exception Occured!");
         }
         return isConnected;
     }
