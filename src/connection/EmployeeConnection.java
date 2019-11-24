@@ -15,6 +15,7 @@ public class EmployeeConnection {
     }
 
     public static boolean closeConnection() {
+        boolean isConnectionClosed = false;
         // check if there is a connection present already
         if (getConnection() != null) {
             try {
@@ -23,7 +24,7 @@ public class EmployeeConnection {
                 System.out.println("Could not close connection");
             }
         }
-        return false;
+        return isConnectionClosed;
     }
 
     /**
