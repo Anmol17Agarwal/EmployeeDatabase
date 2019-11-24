@@ -20,7 +20,7 @@ public class EmployeeConnection {
             try {
                 getConnection().close();
             } catch (SQLException e) {
-                e.printStackTrace();
+                System.out.println("Could not close connection");
             }
         }
         return false;
