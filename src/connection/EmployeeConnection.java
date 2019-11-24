@@ -15,6 +15,10 @@ public class EmployeeConnection {
     }
 
     public static boolean closeConnection() {
+        // check if there is a connection present already
+        if (getConnection() != null) {
+
+        }
         return false;
     }
 
